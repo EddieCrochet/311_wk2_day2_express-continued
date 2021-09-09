@@ -15,13 +15,13 @@ const router = express.Router();
 
 //start adding routes and which controller will respond to them
 //route to fetch all contacts
-router.get("./contacts", controller.list);
+router.get("/contacts", controller.list);
 
 // route to fetch one contact by id
-router.get("./contacts/:id", controller.show);
+router.get("/contacts/:id", controller.show);
 
 // route to create a new contact
-router.put("./contacts", controller.create);
+router.post("/contacts", controller.create);
 
 // must export the router
 module.exports = router;

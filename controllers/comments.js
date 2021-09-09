@@ -2,6 +2,7 @@
 //import in initial array of comments
 let db = require("../data/comments");
 
+// function to list all comments
 let list = function(req, res){
     console.log("controller.comments.list");
     // code to return in response
@@ -26,7 +27,7 @@ let show = function(req, res){
 }
 
 let nextId = 5;
-// creat, assign and id, and add to db array
+// create, assign and id, and add to db array
 // content of commetn will be inside request body
 let create = function(req, res){
     // code to create new comment

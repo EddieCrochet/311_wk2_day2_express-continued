@@ -14,6 +14,10 @@ app.use(express.static("./public"));
 let comRoutes = require("./routes/comments");
 app.use(comRoutes);
 
+//add routes for the contacts and tell app to use it
+let contactRoutes = require("./routes/contacts");
+app.use(contactRoutes);
+
 const port = process.env.PORT || 4001;
 
 app.listen(port, () => {
