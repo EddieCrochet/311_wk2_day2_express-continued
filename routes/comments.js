@@ -13,7 +13,7 @@ const controller = require("../controllers/comments");
  */
 
 
-//start adding routes and which controlelr will respond to them
+//start adding routes and which controller will respond to them
 //route to fetch all comments
 router.get("/comments", controller.list);
 

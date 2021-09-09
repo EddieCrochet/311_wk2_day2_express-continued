@@ -1,10 +1,16 @@
+// importing express
 const express = require("express");
 
+//store expres into variable
 const app = express();
+
+// allows us to parse our responses into json
 app.use(express.json());
 
+// middleware for static files
 app.use(express.static("./public"));
 
+// add routes for the comments and tell app to use it
 let comRoutes = require("./routes/comments");
 app.use(comRoutes);
 
