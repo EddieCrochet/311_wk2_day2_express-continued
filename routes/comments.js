@@ -20,8 +20,8 @@ router.get("/comments", controller.list);
 // route to fetch one comment by id
 router.get("/comments/:id", controller.show);
 
-// route to creat new comment
+// route to create new comment
 router.post("/comments", controller.create);
 
-// do not forgewt to export the router so the app can use it
+// do not forget to export the router so the app can use it
 module.exports = router;
