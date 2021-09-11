@@ -1,10 +1,9 @@
 // import the array of products
-const products = require('../data/products');
 let db = require('../data/products');
 
 // function to list all products
 let list = (req, res) => {
-    console.log('controllers/products/list');
+    console.log('controllers.products.list');
 
     // send db list as response
     res.json(db);
@@ -32,6 +31,7 @@ let create = (req, res) => {
     newProduct.name = req.body.name;
     newProduct.description = req.body.description;
     db.push(newProduct);
+    newID++;
     res.sendStatus(202);
 }
 

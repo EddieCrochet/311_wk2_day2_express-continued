@@ -22,6 +22,10 @@ app.use(contactRoutes);
 let prodRoutes = require('./routes/products');
 app.use(prodRoutes);
 
+// add routes for the vehicles and tell app to use it
+let vehicleRoutes = require('./routes/vehicles');
+app.use(vehicleRoutes);
+
 const port = process.env.PORT || 4001;
 
 app.listen(port, () => {
