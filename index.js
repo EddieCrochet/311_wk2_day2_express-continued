@@ -18,6 +18,10 @@ app.use(comRoutes);
 let contactRoutes = require("./routes/contacts");
 app.use(contactRoutes);
 
+// add routes for the products and tell app to use it
+let prodRoutes = require('./routes/products');
+app.use(prodRoutes);
+
 const port = process.env.PORT || 4001;
 
 app.listen(port, () => {

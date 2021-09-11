@@ -11,7 +11,7 @@ let db = require("../data/contacts");
  let show = (req, res) => {
     console.log("controller.contacts.show");
     
-    // save id from req into varuable
+    // save id from req into variable
     let id = req.params.id;
 
     // find the one that matches that id
@@ -23,7 +23,6 @@ let db = require("../data/contacts");
 
  let nextId = 6;
  let create = (req, res) => {
-     console.log("wait, fr, nothing???");
      console.log("controller.contacts.create", req.body);
 
      let newContact = req.body;
